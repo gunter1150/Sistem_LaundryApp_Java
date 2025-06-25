@@ -15,8 +15,8 @@ public class Order {
     private LocalDateTime tanggalTransaksi;
 
     public Order(String kodePesanan, String namaCustomer, String jenisLayanan, String jenisPengerjaan,
-                String estimasiWaktu, String metodePengambilan, String metodePembayaran,
-                double beratAtauJumlah, double totalHarga) {
+        String estimasiWaktu, String metodePengambilan, String metodePembayaran,
+        double beratAtauJumlah, double totalHarga) {
         this.kodePesanan = kodePesanan;
         this.namaCustomer = namaCustomer;
         this.jenisLayanan = jenisLayanan;
