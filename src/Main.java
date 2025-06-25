@@ -8,22 +8,22 @@ public class Main {
             System.out.println("====== Selamat Datang di HappyLaundry Undira ======");
             System.out.println("1. Buat Pesanan Baru");
             System.out.println("2. Cek Status Pesanan");
-            System.out.println("3. Keluar");
-            // System.out.println("3. Tampilkan Semua Pesanan (Admin)");
-            // System.out.println("4. Ubah Status Pesanan (Admin)");
-            // System.out.println("5. Tampilkan Ringkasan Transaksi");
-            // System.out.println("6. Keluar");
+            // System.out.println("3. Keluar");
+            System.out.println("3. Tampilkan Semua Pesanan (Admin)");
+            System.out.println("4. Ubah Status Pesanan (Admin)");
+            System.out.println("5. Tampilkan Ringkasan Transaksi");
+            System.out.println("6. Keluar");
             System.out.print("Pilih menu: ");
             String pilihan = Utils.scanner.nextLine();
 
             switch (pilihan) {
                 case "1" -> buatPesanan();
                 case "2" -> cekStatus();
-                case "3" -> running = false;
-                // case "3" -> manager.tampilkanSemuaPesanan();
-                // case "4" -> ubahStatusPesanan();
-                // case "5" -> manager.tampilkanRingkasan();
-                // case "6" -> running = false;
+                // case "3" -> running = false;
+                case "3" -> manager.tampilkanSemuaPesanan();
+                case "4" -> ubahStatusPesanan();
+                case "5" -> manager.tampilkanRingkasan();
+                case "6" -> running = false;
                 default -> System.out.println("Pilihan tidak valid.");
             }
         }
